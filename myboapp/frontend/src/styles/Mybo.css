@@ -1,0 +1,95 @@
+/* Background setup similar to Story */
+.login-container {
+  background-color: #FFB6C1; /* Light pink background */
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/008/376/219/small/sugar-cotton-blue-clouds-design-background-fluffy-sky-texture-elegant-pastel-decoration-backdrop-trendy-wallpaper-free-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* Make sure the image covers the entire container */
+  background-position: center top;
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Welcome Message */
+.welcome-message {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.japanese-message {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2rem;
+  color: #ad3d31;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form container */
+.login-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  background-color: #7373E3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.login-form button:hover {
+  background-color: #5A5ACD;
+}
+
+/*signup link stuff*/
+
+.sign-up-link:link {
+  color:red;
+  text-decoration: none;
+}
+
+.sign-up-link:visited {
+  color:red;
+  text-decoration: none;
+}
+
+.sign-up-link:hover {
+  color:darkred;
+  text-decoration: underline;
+}
+
+.sign-up-link:active {
+  color:purple;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-form {
+    width: 90%;
+  }
+}
+

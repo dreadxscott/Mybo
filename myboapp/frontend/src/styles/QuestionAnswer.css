@@ -1,0 +1,150 @@
+/* Main container for the Question Answer Component */
+.qa-container {
+    background-color: #FFB6C1;  /* Darker pink color */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/008/376/219/small/sugar-cotton-blue-clouds-design-background-fluffy-sky-texture-elegant-pastel-decoration-backdrop-trendy-wallpaper-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  /* Make sure the image covers the entire container */
+    background-position: center top;  /* Align the image nicely */
+    background-blend-mode: multiply;  /* Mix the image with the pink background */
+    padding: 50px;
+    height: 100vh; /* Full page height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+/* Bottom pink wave for aesthetic */
+.qa-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    opacity: 0.9;
+    clip-path: polygon(0 40%, 10% 45%, 20% 40%, 30% 45%, 40% 40%, 50% 45%, 60% 40%, 70% 45%, 80% 40%, 90% 45%, 100% 40%, 100% 100%, 0 100%);
+}
+
+/* The title of the story/question */
+.qa-title {
+    font-size: 2.5rem;
+    font-family: 'Trebouchet MS', sans-serif;
+    text-align: center;
+    color: #333;  /* Darker color for better contrast */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: bold;  /* Make the title bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* Subtle shadow to make it stand out */
+    position: relative;  /* Ensure it's positioned relative to other elements */
+    z-index: 10;  /* Place the title in front of other elements */
+}
+
+/* The question text */
+.qa-question {
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: slide-in 0.5s ease-in-out forwards;
+    z-index: 10;
+}
+
+/* Response message styling */
+.response-message {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;  /* Ensure the response is properly positioned */
+    z-index: 10;  /* Ensure it's in front of the wave */
+    background-color: rgba(255, 255, 255, 0);  /* Slightly transparent white background */
+    padding: 15px;
+    border-radius: 5px;  /* Rounded corners for a smoother look */
+}
+
+/* Points */
+.qa-points {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Form input styling */
+.qa-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+/* Submit button */
+.qa-submit {
+    background-color: #7373E3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.qa-submit:hover {
+    background-color: #8929b9;
+}
+
+/* Navigation buttons styling */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;  /* Ensure they are properly positioned */
+    z-index: 10;  /* Keep them above the wave */
+}
+
+/* Button styling */
+.navigation-buttons button {
+    background-color: #7373E3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #8929b9;
+}
+
+/* Animation for question sliding in */
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation for slide out */
+@keyframes slide-out {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}

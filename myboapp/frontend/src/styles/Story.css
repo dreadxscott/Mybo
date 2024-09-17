@@ -1,0 +1,188 @@
+/* Story container with full wavy pink background */
+
+.story-container {
+  background-color: #FFB6C1;  /* Darker pink color */
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/008/376/219/small/sugar-cotton-blue-clouds-design-background-fluffy-sky-texture-elegant-pastel-decoration-backdrop-trendy-wallpaper-free-vector.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;  /* Make sure the image covers the entire container */
+  background-position: center top;  /* Align the image nicely */
+  background-blend-mode: multiply;  /* Mix the image with the pink background */
+  padding: 50px;
+  height: 100vh; /* Full page height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+  
+  /* Keep the wave at the bottom */
+  .story-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    opacity: 0.9;
+    clip-path: polygon(0 40%, 10% 45%, 20% 40%, 30% 45%, 40% 40%, 50% 45%, 60% 40%, 70% 45%, 80% 40%, 90% 45%, 100% 40%, 100% 100%, 0 100%);
+}
+  
+  /* Content to ensure everything is centered */
+  .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center horizontally */
+    justify-content: center;  /* Center vertically */
+    text-align: center;  /* Center text inside the elements */
+  }
+  
+  /* Style for the story text */
+  .story-text {
+    font-size: 2rem;
+    font-family: 'Noto Serif JP', serif;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  
+  /* Highlight the keyword */
+  .story-text .keyword {
+    color: #ad3d31;
+    font-weight: bold;
+  }
+
+  .english-translation {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; /* Add a 20px margin to the left */
+  }
+
+  /* Navigation Buttons */
+  .story-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Keep Previous and Next buttons side by side */
+  }
+  
+  .story-buttons button {
+    border-radius: 5px;
+    background-color: #7373E3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;  /* Space between Previous and Next buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .story-buttons button:hover {
+    background-color: #5A5ACD; /* Hover color */
+  }
+
+  /* Wrapper for the Translate button */
+.toggle-language-btn {
+  display: flex;
+  justify-content: center; /* Center the translate button */
+  position: relative;
+  margin-left: 10px;
+}
+
+.toggle-language-btn {
+  background-color: #7373E3;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-language-btn:hover {
+  background-color: #5A5ACD; /* Hover color */
+}
+
+  /* Keyframe animation for sliding the text in from the right */
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);  /* Start from the right */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);  /* End at the center */
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframe animation for sliding the text out to the right */
+  @keyframes slideOutToRight {
+    from {
+      transform: translateX(0);  /* Start at the center */
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);  /* End by moving out to the right */
+      opacity: 0;
+    }
+  }
+  
+  /* Keyframe animation for sliding the text in from the left */
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);  /* Start from the left */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);  /* End at the center */
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframe animation for sliding the text out to the left */
+  @keyframes slideOutToLeft {
+    from {
+      transform: translateX(0);  /* Start at the center */
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);  /* End by moving out to the left */
+      opacity: 0;
+    }
+  }
+  
+  /* Apply the animation to the story text */
+  .story-text {
+    font-size: 2rem;
+    font-family: 'Noto Serif JP', serif;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    opacity: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Add the slide-in from right animation */
+  .slide-in-right {
+    animation-name: slideInFromRight;
+  }
+  
+  /* Add the slide-out to right animation */
+  .slide-out-right {
+    animation-name: slideOutToRight;
+  }
+  
+  /* Add the slide-in from left animation */
+  .slide-in-left {
+    animation-name: slideInFromLeft;
+  }
+  
+  /* Add the slide-out to left animation */
+  .slide-out-left {
+    animation-name: slideOutToLeft;
+  }
+  

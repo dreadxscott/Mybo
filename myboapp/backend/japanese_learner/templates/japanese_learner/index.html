@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    <!-- HTML FOR LANGUAGE SELECTOR -->
+    <select id="language-select">
+        <option value="en">English</option>
+        <option value="jp">日本語</option>
+    </select>
+
+    <div id="greeting">Hello!</div>
+
+    <script>
+        const greeting = document.getElementById('greeting');
+        const languageSelect = document.getElementById('language-select');
+
+        languageSelect.addEventListener('change', function() {
+            if (languageSelect.value == 'jp') {
+                greeting.textContent = 'こんにちは！';
+            } else if (languageSelect.value === 'en') {
+                greeting.textContent = 'Hello';
+            }
+        });
+    </script>
+</body>
+</html>
