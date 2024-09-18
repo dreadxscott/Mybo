@@ -53,6 +53,9 @@ While making Mybo, I learned quite a bit. I discovered free resources for learni
 <p>
 Aozora (青空 meaning 'blue sky') is a Japanese electronic library with a vast collection of Japanese literature that has entered the public domain. I plan to use Aozora to further populate the database with reading material as I continue building a web app that helps people improve their reading comprehension.
 </p>
+<p>
+  On top of that, I learned how to integrate a tech stack with multiple components, namely Javascript using React, and Python using Django. I learned about how imporant, and how much effort goes, into cross-origin resource sharing. I learned the basics of security while creating a sign-in form, and how to secure different modules in my program to where they require credentials for access. 
+</p>
 
 <h2>What Makes Mybo Stand Out?</h2>
 <p>
