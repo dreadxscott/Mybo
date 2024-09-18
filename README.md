@@ -67,7 +67,7 @@ Currently, the answers to the Q&A section are based on these English translation
 
 <h2>How to Use This Project</h2>
 <p>
-To use this project, download the entire repository. Create a virtual environment and install the required libraries listed in requirements.txt. You'll then have to navigate to where the manage.py is (should be in Mybo/myboapp/backend/) and in the command line/terminal run "python manage.py runserver". This will initiate the backend. To initiate the frontend, navigate to the location of the package.json (should be Mybo/myboapp/frontend/), start a command line or terminal from this, and run "nmp start". This will initiate the frontend. 
+To use this project, create a virtual environment and install the required libraries listed in requirements.txt. Download this project inside the virtual environment directory. You may need to add this virtual environment's python interpreter to your local PYTHONPATH. Afterwards, you'll then have to navigate to where the manage.py is (should be in Mybo/myboapp/backend/) and in the command line/terminal run "python manage.py runserver". This will initiate the backend. To initiate the frontend, navigate to the location of the package.json (should be Mybo/myboapp/frontend/), start a command line or terminal from this, and run "nmp start". This will initiate the frontend. 
 </p>
 <p>
 Some issues might arise in recognizing certain model locations within the project; these can be fixed by adding the project's interpreter to your PYTHONPATH. Finally, create a user on the app to log in. If you don't want to make a user, the following credentials should get you in:
