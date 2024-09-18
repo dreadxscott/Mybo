@@ -1,4 +1,4 @@
-<title>Mybo: A Japanese Language Learning Partner</title>
+<h1>Mybo: A Japanese Language Learning Partner</h1>
 
 Mybo is a Japanese Language Learning Partner, named for a portmanteau of 'My' and 'aibo' (the Japanese word for companion)
 
