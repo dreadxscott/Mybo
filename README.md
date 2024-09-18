@@ -1,53 +1,66 @@
 <h1>Mybo: A Japanese Language Learning Partner</h1>
-
+<body>
+<p>
 Mybo is a Japanese Language Learning Partner, named for a portmanteau of 'My' and 'aibo' (the Japanese word for companion)
-
+</p>
+<p>
 The project is a web-based application that combines multiple-choice flashcards, a sentence navigation system, and questions with answer input, to create an overall immersive learning experience for users. It features a clean, simple aesthetic, dynamic page elements, and smooth transitions between English and Japanese. This writeup covers the technology stack, key challenges, and solutions throughout the project.
-
+</p>
 <h1>The Stack:</h1>
 <h2>Technology Stack</h2>
 
 <ol>
 <li>Backend: Django (Python) </li>
        <ul>
-       <li>◦ Django Rest Framework (DRF) for building APIs.</li>
-       <li>◦ JWT (JSON Web Token) for authentication.</li>
+       <li>Django Rest Framework (DRF) for building APIs.</li>
+       <li>JWT (JSON Web Token) for authentication.</li>
        </ul>
 <li>Frontend: React (JavaScript)</li>
        <ul>
-       <li> Axios for API calls.</li>
+       <li>Axios for API calls.</li>
         <li>React Router for navigation.</li>
        <li>CSS for styling.</li>
        </ul>
 <li>Database: SQLite (for local development).</li>
 </ol>
-   
+<p>
 Mybo contains a backend written in Python, using Django and Django Rest Framework to organize the database of words, sentences, and stories
+</p>
+<p>
 Mybo uses a frontend written in Javascript, mainly employing React, to dynamically display the information in a clean and engaging way with animations
+</p>
 
-What was your motivation?
+
+<h4>What was your motivation?</h4>
+<p>
 I was motivated to create this project by my love of the Japanese language, as well as Japanese culture, and a desire to share this love with the world. I've been studying Japanese since about 11 years old (I'm 28 as of writing this ReadMe), and I've been studying with a teacher for the past three years. During this time, I've gained insights into what did and did not help me learn, and which aspects of language learning I wish I had focused on in my time studying. After reflecting, I took to making Mybo, which yous see now in its infancy. 
-
+</p>
+<p>
 Why did you build this project?
 I built Mybo because I felt like the Japanese functionality on a certain Green Bird app wasn't as extensive as I would like, and didn't give the User an understanding of regular Japanese used by everyday speakers, instead offering speakers lessons in a somewhat disjointed fashion. And while I'm sure this app is a credible educational source, I wasn't satisfied when I used it. 
-
+</p>
+<p>
 What problem does it solve?
 A big part of learning Japanese, as it has no direct linguistic relatives (Korean seems to be a distant linguistic relative), learning to read and write the new script, and incorporate that into other aspects of language learning e.g. vocabulary and grammar, is quite the challenge. It is my hope that Mybo can help tackle this through introducing Users to Japanese literature with various grammatical forms and extensive vocabulary to help them achieve their goals in Japanese language learning. 
-
+</p>
+<p>
 What did you learn?
 While making Mybo I learned quite a bit. I learned of the free resources for learning Japanese that I brought together for the data in my project, including Tadoku and Aozora. Tadoku (多読 meaning 'reading extensively') is a website that offers various picture books for Japanese learners to improve their reading comprehension. Their story "Hanasuke the Chihuahua" acted as the basis for the story available on Mybo at the moment. 
 Aozora (青空 meaning 'blue sky') is a Japanese electronic library with a vast quantity of Japanese literature that's entered the public domain. I plan to use Aozora to populate the database further with reading material to continue my efforts of building a web app than can help people improve their reading comprehension. 
-
-What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.
+</p>
+<p>
+What makes your project stand out? 
 Mybo has a beautiful, sleek interface, and users are able to choose story mode, to read a story, as well as a flashcard and question-and-answer game to test their newly acquired knowledge. The story has a language toggle button, so users can read the story with English subtitles, or can read the story in Japanese.
-
-Currently, the answers to the Q&A section are to be found in these English translations. A potential future improvement would be the use of NLP to accept a wider range of answers
-, as this would help users increase their linguistic flexibility. 
-
+</p>
+<p>
+Currently, the answers to the Q&A section are to be found in these English translations. A potential future improvement would be the use of NLP to accept a wider range of answers, as this would help users increase their linguistic flexibility. 
+</p>
+<p>
 In order to use this project, download the whole repository. Create a virtual environment, and add to it the libraries in the requirements.txt. Some issues may arise with recognizing the location of certain models within the project. These can be fixed by adding the interpreter for the project to your PYTHONPATH. Finally, you will be able to log in by creating a user on the app itself. 
-
+</p>
+<p>
 Please continue reading for a more in-depth discussion on the ins-and-outs of the project, the stack, challenges I faced while building, and how I overcame them. I plan on expanding this as the project grows, and hope you can join me on the journey. 
-
+</p>
 Phase 1: Backend (Django)
 1.1 Setting up Django and DRF
 We began by setting up a Django backend with Django Rest Framework (DRF) for building our API endpoints.
@@ -111,3 +124,4 @@ Challenges and Solutions
 
 Final Thoughts
 The Mybo Japanese Learning App has turned out to be a robust, interactive learning platform. I successfully integrated Django for the backend, React for the frontend, JWT for authentication, and built a clean, functional interface. The journey was filled with various challenges, but I worked through them methodically.
+</body>
