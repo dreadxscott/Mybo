@@ -64,7 +64,9 @@ Currently, the answers to the Q&A section are based on these English translation
 
 <h2>How to Use This Project</h2>
 <p>
-To use this project, download the entire repository. Create a virtual environment and install the required libraries listed in requirements.txt. Some issues might arise in recognizing certain model locations within the project; these can be fixed by adding the project's interpreter to your PYTHONPATH. Finally, create a user on the app to log in.
+To use this project, download the entire repository. Create a virtual environment and install the required libraries listed in requirements.txt. Some issues might arise in recognizing certain model locations within the project; these can be fixed by adding the project's interpreter to your PYTHONPATH. Finally, create a user on the app to log in. If you don't want to make a user, the following credentials should get you in:
+<p>username: dread</p>
+<p>password: snowfairy99</p>
 </p>
 
 <h2>In-depth Overview</h2>
