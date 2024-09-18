@@ -30,26 +30,25 @@ Mybo contains a backend written in Python, using Django and Django Rest Framewor
 Mybo uses a frontend written in Javascript, mainly employing React, to dynamically display the information in a clean and engaging way with animations
 </p>
 
-
-<h4>What was your motivation?</h4>
 <p>
+<h4>What was your motivation?</h4>
 I was motivated to create this project by my love of the Japanese language, as well as Japanese culture, and a desire to share this love with the world. I've been studying Japanese since about 11 years old (I'm 28 as of writing this ReadMe), and I've been studying with a teacher for the past three years. During this time, I've gained insights into what did and did not help me learn, and which aspects of language learning I wish I had focused on in my time studying. After reflecting, I took to making Mybo, which yous see now in its infancy. 
 </p>
 <p>
-Why did you build this project?
+<h4>Why did you build this project?</h4>
 I built Mybo because I felt like the Japanese functionality on a certain Green Bird app wasn't as extensive as I would like, and didn't give the User an understanding of regular Japanese used by everyday speakers, instead offering speakers lessons in a somewhat disjointed fashion. And while I'm sure this app is a credible educational source, I wasn't satisfied when I used it. 
 </p>
 <p>
-What problem does it solve?
+<h4>What problem does it solve?</h4>
 A big part of learning Japanese, as it has no direct linguistic relatives (Korean seems to be a distant linguistic relative), learning to read and write the new script, and incorporate that into other aspects of language learning e.g. vocabulary and grammar, is quite the challenge. It is my hope that Mybo can help tackle this through introducing Users to Japanese literature with various grammatical forms and extensive vocabulary to help them achieve their goals in Japanese language learning. 
 </p>
 <p>
-What did you learn?
+<h4>What did you learn?</h4>
 While making Mybo I learned quite a bit. I learned of the free resources for learning Japanese that I brought together for the data in my project, including Tadoku and Aozora. Tadoku (多読 meaning 'reading extensively') is a website that offers various picture books for Japanese learners to improve their reading comprehension. Their story "Hanasuke the Chihuahua" acted as the basis for the story available on Mybo at the moment. 
 Aozora (青空 meaning 'blue sky') is a Japanese electronic library with a vast quantity of Japanese literature that's entered the public domain. I plan to use Aozora to populate the database further with reading material to continue my efforts of building a web app than can help people improve their reading comprehension. 
 </p>
 <p>
-What makes your project stand out? 
+<h4>What makes your project stand out?</h4>
 Mybo has a beautiful, sleek interface, and users are able to choose story mode, to read a story, as well as a flashcard and question-and-answer game to test their newly acquired knowledge. The story has a language toggle button, so users can read the story with English subtitles, or can read the story in Japanese.
 </p>
 <p>
