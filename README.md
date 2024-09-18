@@ -8,14 +8,18 @@ The project is a web-based application that combines multiple-choice flashcards,
 <h2>Technology Stack</h2>
 
 <ol>
-<li>1. Backend: Django (Python) </li>
-       ◦ Django Rest Framework (DRF) for building APIs.
-       ◦ JWT (JSON Web Token) for authentication.
-<li>2. Frontend: React (JavaScript)</li>
-        ◦ Axios for API calls.
-        ◦ React Router for navigation.
-        ◦ CSS for styling.
-<li>3. Database: SQLite (for local development).</li>
+<li>Backend: Django (Python) </li>
+       <ul>
+       <li>◦ Django Rest Framework (DRF) for building APIs.</li>
+       <li>◦ JWT (JSON Web Token) for authentication.</li>
+       </ul>
+<li>Frontend: React (JavaScript)</li>
+       <ul>
+       <li> Axios for API calls.</li>
+        <li>React Router for navigation.</li>
+       <li>CSS for styling.</li>
+       </ul>
+<li>Database: SQLite (for local development).</li>
 </ol>
    
 Mybo contains a backend written in Python, using Django and Django Rest Framework to organize the database of words, sentences, and stories
