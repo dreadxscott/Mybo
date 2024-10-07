@@ -11,6 +11,7 @@ const MultipleChoiceFlashcard = () => {
   const [allWords, setAllWords] = useState([]);
   const [message, setMessage] = useState([]);
   const [isCorrect, setCorrect] = useState([]);
+  const [choices, setChoices] = useState([]);
 
 
   useEffect(() => {
@@ -33,6 +34,19 @@ const MultipleChoiceFlashcard = () => {
     }
       loadingQuestionsAndWords();
   }, []);
+
+  useEffect(() => {
+    if (!questions || questions.length === 0) return;  // If no questions, do nothing
+
+    // Generate choices for the current question when currentQuestionIndex changes
+    const currentQuestion = questions[currentQuestionIndex];
+    const newChoices = generateRandomChoices(currentQuestion);
+    setChoices(newChoices);
+  }, [currentQuestionIndex, questions]);
+
+  if (loadingQuestions) {
+    return <div>Loading Questions...</div>;
+  }
 
   if (loadingQuestions) {
     return <div>Loading Questions...</div>;
@@ -73,20 +87,34 @@ const MultipleChoiceFlashcard = () => {
 
   // Navigation handlers for Next/Previous
   const nextQuestion = () => {
+    //change to the next question
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     }
+
+    //load choices
+    const newChoices = generateRandomChoices(currentQuestion);
+    setChoices(newChoices);
+
+    //clear message
     setMessage(''); //Clear the message when the button is clicked
   };
 
   const previousQuestion = () => {
+    //go to the previous question
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
+
+    //load choices
+    const newChoices = generateRandomChoices(currentQuestion);
+    setChoices(newChoices)
+
+    //clear the message
     setMessage(''); //Clear the message when the button is clicked
   };
 
-    const choices = generateRandomChoices(currentQuestion);
+    
 
     // Handle flashcard click
     const handleFlashcardClick = (choice) => {

@@ -27,21 +27,21 @@ const AppContent = () => {
       {location.pathname !== '/login' && (
         <>
           {/* Navigation Links */}
-          <nav>
-            <ul>
-              <li>
+          <nav className='navigation-bar'>
+            
+              <div>
                 <Link to="/login">Home</Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link to="/story">Story</Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link to="/flashcards">Flashcards</Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link to="/question-answer">Q&A</Link>
-              </li>
-            </ul>
+              </div>
+            
           </nav>
           
           {/* Show the Logout button when logged in */}
